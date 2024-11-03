@@ -1,0 +1,21 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 8px;
+}
+
+.svg-shadow {
+  animation: svg-shadow 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes svg-shadow {
+  from {
+    filter: drop-shadow(0 0 1px #fff) drop-shadow(0 0 1px tomato)
+      drop-shadow(0 0 1px tomato);
+  }
+
+  to {
+    filter: drop-shadow(0 0 2px #fff) drop-shadow(0 0 2px tomato)
+      drop-shadow(0 0 2px tomato);
+  }
+}
